@@ -1,0 +1,142 @@
+/*style.css feito por Gotastico*/
+/*Fundo*/
+body
+{
+  background-image: url(images/CPBackground.png);
+}
+
+/*div pai*/
+.container
+{
+  position: relative;
+}
+
+/*div filho*/
+.child
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*texto*/
+b
+{
+  position: absolute;
+  width: 661px;
+  height: 77px;
+  left: 345px;
+  top: 120px;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 77px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 60px;
+}
+
+strong
+{
+  position: absolute;
+  width: 661px;
+  height: 77px;
+  left: 345px;
+  top: 560px;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 77px;
+  text-align: center;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/*botões(input)*/
+#input1
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 142px;
+  top: 220px;
+  cursor: pointer;
+}
+
+#input2
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 414px;
+  top: 220px;
+  cursor: pointer;
+}
+
+#input3
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 686px;
+  top: 220px;
+  cursor: pointer;
+}
+
+#input4
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 958px;
+  top: 220px;
+  cursor: pointer;
+}
+
+/*animações dos botões*/
+#input1:hover
+{
+  transform: scale(1.1);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#input2:hover
+{
+  transform: scale(1.1);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#input3:hover
+{
+  transform: scale(1.1);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#input4:hover
+{
+  transform: scale(1.1);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}

@@ -1,60 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <title>Escolhendo CPPS</title>
-    <style>
-      /* Define the main wrapper style */
-      .LoaderWrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-
-        box-sizing: border-box;
-        background-color: #2E9FF7;
-      }
-
-      .LoaderContent {
-        color: white;
-		font-family: Arial;
-      }
-		.loader {
-		  border: 5px solid #f3f3f3; /* Light grey */
-		  border-top: 5px solid #3498db; /* Blue */
-		  border-radius: 50%;
-		  width: 50px;
-		  height: 50px;
-		  animation: spin 2s linear infinite;
-		  display: block;
-		}
-		@keyframes spin {
-		  0% { transform: rotate(0deg); }
-		  100% { transform: rotate(360deg); }
-		}
-	  
-    </style>
+    <meta charset="utf-8">
+    <title>CPPS Menu</title>
+    <link rel="stylesheet" type="text/css"  href="style.css" />
   </head>
   <body>
-	
-    <div class="LoaderWrapper">
-		<center>
-			<div class="LoaderContent">
-				<center><h1>Escolha o CPPS que você deseja jogar!</h1></center>
-				<center><h2>As opções estão no menu do cliente.</h2></center>
-				<br>
-				<center><h4>Feito com ❤ por Piter</h4></center>
-			</div>
-		</center>
+    <div class = "container">
+       <div class="child">
+        <b>ESCOLHA SEU CPPS:</b>
+        <strong>FEITO COM ❤ POR PITER E GOTASTICO</STRONG>
+        <a href="https://play.newcp.net/pt/?force=true#/login"><input id = "input1" type = "image" src = "images/NewCP.png">
+        <a href="https://play.flippr.world/#/login"><input id = "input2" type = "image" src = "images/Flippr.png">
+        <a href="https://universalpenguin.com"><input id = "input3" type = "image" src = "images/UniversalPenguin.png">
+        <a href="https://jugar.supercpps.com"><input id = "input4" type = "image" src = "images/SuperCP.png">
+      </div>
     </div>
-
   </body>
 </html>
