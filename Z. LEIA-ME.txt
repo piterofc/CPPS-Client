@@ -1,0 +1,20 @@
+Tutorial criado por Piter
+• Discord: Piter#6645
+• Twitter: @PiterOfc
+
+Apoio de Noodles Picante:
+• Website: www.noodlespicante.site
+• Servidor Discord: https://discord.gg/P9dhMJQ
+• Twitter: @NoodlesPicante
+
+==========
+
+ANTES DE TUDO, NÃO SE ESQUEÇA DE FAZER O BACKUP DO DESKTOP CLIENT ORIGINAL DO CPBR!
+CASO A MODIFICAÇÃO NÃO FUNCIONE, VOLTE PARA O DESKTOP CLIENT ORIGINAL!!!
+
+Arraste os seguintes arquivos/pastas para o local onde o desktop client do CPBR está instalado no seu computador:
+• main-cpbr.js
+• config.json
+• /pages
+
+Depois disso é só executar o .exe do CPBR normalmente!
