@@ -35,68 +35,68 @@ function makeMenu() {
     }
   }));
 
-// Jogos
+// CPPS's
   fsmenu.append(new MenuItem({
-    label: 'CPPS 1',
+    label: `${config.cpps1.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps1}`);
+      mainWindow.loadURL(`${config.cpps1.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 2',
+    label: `${config.cpps2.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps2}`);
+      mainWindow.loadURL(`${config.cpps2.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 3',
+    label: `${config.cpps3.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps3}`);
+      mainWindow.loadURL(`${config.cpps3.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 4',
+    label: `${config.cpps4.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps4}`);
+      mainWindow.loadURL(`${config.cpps4.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 5',
+    label: `${config.cpps5.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps5}`);
+      mainWindow.loadURL(`${config.cpps5.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 6',
+    label: `${config.cpps6.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps6}`);
+      mainWindow.loadURL(`${config.cpps6.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 7',
+    label: `${config.cpps7.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps7}`);
+      mainWindow.loadURL(`${config.cpps7.url}`);
 	  clearCache
     }
   }));
   fsmenu.append(new MenuItem({
-    label: 'CPPS 8',
+    label: `${config.cpps8.nome}`,
     click: () => {
 	  clearCache;
-      mainWindow.loadURL(`${config.cpps8}`);
+      mainWindow.loadURL(`${config.cpps8.url}`);
 	  clearCache
     }
   }));
@@ -109,7 +109,7 @@ function makeMenu() {
         type: "info",
         buttons: ["Ok"],
         title: "Sobre o Desktop Client",
-        message: "CP Client\nDesenvolvido por Piter com base no projeto do Club Penguin Brasil\n\nApoio: Noodles Picante - www.noodlespicante.site\nDiscord server: discord.gg/P9dhMJQ"
+        message: "CPPS Client\nDesenvolvido por Piter e Gotástico com base no projeto do Club Penguin Brasil\n\nApoio: Noodles Picante - www.noodlespicante.site\nDiscord server: discord.gg/P9dhMJQ"
       });
     }
   }));
@@ -230,7 +230,7 @@ app.on('ready', function () {
       });
 });
 
-app.setAsDefaultProtocolClient('cpclient');
+app.setAsDefaultProtocolClient('cppsclient');
 
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit();

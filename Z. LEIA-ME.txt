@@ -7,6 +7,8 @@ Apoio de Noodles Picante:
 • Servidor Discord: https://discord.gg/P9dhMJQ
 • Twitter: @NoodlesPicante
 
+Cliente desenvolvido por Piter e Gotastico
+
 ==========
 
 ANTES DE TUDO, NÃO SE ESQUEÇA DE FAZER O BACKUP DO DESKTOP CLIENT ORIGINAL DO CPBR!
