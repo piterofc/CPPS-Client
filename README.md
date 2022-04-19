@@ -3,7 +3,7 @@ Repositório GitHub da modificação do cliente desktop do Club Penguin Brasil p
 
 💡/❌ Sugestões ou bugs:
 ----
-Caso queira fazer alguma sugestão para nosso blog, abra uma issue e envie sua sugestão que iremos analisá-la!
+Caso queira fazer alguma sugestão para o cliente, abra uma issue e envie sua sugestão que iremos analisá-la!
 
 **Bugs/sugestões abertas:**<br> [![](https://img.shields.io/github/issues/piter15821/CPPS-Client?style=for-the-badge)](#)
 
