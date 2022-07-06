@@ -19,4 +19,6 @@ Arraste os seguintes arquivos/pastas para o local onde o desktop client do CPBR 
 • config.json
 • /pages
 
-Depois disso é só executar o .exe do CPBR normalmente!
+Depois, delete o arquivo `main.js` (certifique-se de ter uma cópia dele) e renomeie o `main-cpbr.js` para `main.js`
+
+Feito isso é só executar o .exe do CPBR normalmente!
