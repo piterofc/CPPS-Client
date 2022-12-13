@@ -1,6 +1,6 @@
 {
   "name": "cppsclient",
-  "version": "2.0.2",
+  "version": "2.0.0",
   "description": "CPPSClient (base do CP Brasil)",
   "main": "main.js",
   "bugs": {

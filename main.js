@@ -7,7 +7,7 @@ const fs = require('fs');
 const config = require("./config.js"); //define config
 const path = require('path');
 
-let updateAvailable = false;
+var updateAvailable = false;
 
 let pluginName
 /*
@@ -42,13 +42,15 @@ switch (process.platform) {
     break;
   case 'linux':
     app.commandLine.appendSwitch('no-sandbox');
-    pluginName = 'flash/libpepflashplayer.so';;
+    pluginName = 'flash/libpepflashplayer.so';
     break;
 };
 
 app.commandLine.appendSwitch('ppapi-flash-path', path.join(__dirname, pluginName));
 
 autoUpdater.checkForUpdatesAndNotify();
+//autoUpdater.setFeedURL(`https://github.com/piterofc/CPPS-Client`);
+//autoUpdater.checkForUpdates();
 let mainWindow;
 let fsmenu;
 var asker;
@@ -523,6 +525,8 @@ if (!gotTheLock) {
 	app.setAsDefaultProtocolClient('cpps');
 
 // Agora vem o auto updater
+var updateVers;
+
 if (config.auto_update == true) {
 
   autoUpdater.on('update-available', (updateInfo) => {
@@ -532,7 +536,7 @@ if (config.auto_update == true) {
             type: "info",
             buttons: ["Ok"],
             title: "Atualização disponível",
-            message: `Há uma nova versão disponível para o cliente (v${updateInfo?.version})! \nEla será instalada quando o cliente fechar.`
+            message: `Há uma nova versão disponível para o cliente (v${updateInfo.version})! \nEla será instalada quando o cliente fechar.`
           });
           break;
       case 'darwin':
@@ -540,7 +544,7 @@ if (config.auto_update == true) {
             type: "info",
             buttons: ["Ok"],
             title: "Atualização disponível",
-            message: `Há uma nova versão disponível para o cliente (v${updateInfo?.version})! \nPor favor, instale a nova versão manualmente no repositório.`
+            message: `Há uma nova versão disponível para o cliente (v${updateInfo.version})! \nPor favor, instale a nova versão manualmente no repositório.`
           });
           break;
       case 'linux':
@@ -548,15 +552,16 @@ if (config.auto_update == true) {
             type: "info",
             buttons: ["Ok"],
             title: "Atualização disponível",
-            message: `Há uma nova versão disponível para o cliente (v${updateInfo?.version})! \nO sistema de atualização automática não foi testada neste sistema operacional, então se você receber este aviso da próxima vez que abrir o cliente, instale a nova versão manualmente no repositório.`
+            message: `Há uma nova versão disponível para o cliente (v${updateInfo.version})! \nO sistema de atualização automática não foi testada neste sistema operacional, então se você receber este aviso da próxima vez que abrir o cliente, instale a nova versão manualmente no repositório.`
           });
           break;
     }
-      //mainWindow.webContents.send('update_available', updateInfo.version);
+      mainWindow.webContents.send('update_available', updateInfo.version);
   });
 
-  autoUpdater.on('update-downloaded', () => {
+  autoUpdater.on('update-downloaded', (updateInfo) => {
       updateAvailable = true;
+      updateVers = updateInfo.version;
   });
 
 }
@@ -565,34 +570,36 @@ if (config.auto_update == true) {
 	app.on('window-all-closed', function () {
     // Quando o cliente for fechado, auto-atualiza e fecha se ativado e se houver atualização disponível
     if (config.auto_update == true) {
+
       if (updateAvailable) {
         dialog.showMessageBox({
           type: "info",
           buttons: ["Ok"],
           title: "Atualização do cliente",
-          message: `Instalando a nova versão do cliente...`
+          message: `Instalando a nova versão (${updateVers}) do cliente...`
         });
+
         setTimeout(function() {
           tray.destroy();
           autoUpdater.quitAndInstall();
         }, 2000);
+
       } else if (process.platform !== 'darwin') {
         tray.destroy();
         app.quit();
-      }
+      };
+
     } else { // E se não tiver ativado, só ignora e fecha o cliente
       if (process.platform !== 'darwin') {
         tray.destroy();
         app.quit();
-      }
-    }
+      };
+    };
 	});
 
 	app.on('activate', function () {
 	  //if (mainWindow === null) createWindow();
-	  if (BrowserWindow.getAllWindows().length === 0) {
-		createWindow();
-	  }
+	  if (BrowserWindow.getAllWindows().length === 0) createWindow();
 	});
 
 	/*

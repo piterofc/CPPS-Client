@@ -4,7 +4,7 @@ const config = {
 
     "home": "", // IGNORAR
 	"auto_update": false, // AINDA NÃO TESTADO | SE O CLIENTE DEVERÁ SER ATUALIZADO AUTOMATICAMENTE OU NÃO
- 
+
 	"modos": {
 		"youtuber": false, // ABRE EM TELA CHEIA E ADICIONA ZOOMS PERSONALIZADOS (❤ NOODLES PICANTE 🧡💗)
 		"dev": false // HABILITA FERRAMENTA WEB DE DESENVOLVEDOR

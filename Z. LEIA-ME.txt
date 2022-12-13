@@ -25,7 +25,7 @@ CASO A MODIFICAÇÃO NÃO FUNCIONE, VOLTE PARA O DESKTOP CLIENT ORIGINAL!!!
 
 - Arraste os seguintes arquivos/pastas para o local onde o desktop client do CPBR está instalado no seu computador:
 
-   • main.js  • config.js  • package.json  • /pages
+   • main.js  • config.js  • package.json
 
 - Modifique os links dos CPPS's de sua preferência em "config.json"
 
