@@ -30,4 +30,6 @@ CASO A MODIFICAÇÃO NÃO FUNCIONE, VOLTE PARA O DESKTOP CLIENT ORIGINAL!!!
 - Renomeie o arquivo "main-cpbr.js" para "main.js" (substituindo o antigo)
 - Modifique os links dos CPPS's de sua preferência em "config.json"
 
-Depois disso é só executar o .exe do CPBR normalmente!
+Depois, delete o arquivo `main.js` (certifique-se de ter uma cópia dele) e renomeie o `main-cpbr.js` para `main.js`
+
+Feito isso é só executar o .exe do CPBR normalmente!
