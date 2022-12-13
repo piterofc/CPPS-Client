@@ -28,6 +28,6 @@ CASO A MODIFICAÇÃO NÃO FUNCIONE, VOLTE PARA O DESKTOP CLIENT ORIGINAL!!!
 
    • main.js  • config.js  • package.json
 
-- Modifique os links dos CPPS's de sua preferência em "config.json"
+- Modifique os links dos CPPS's de sua preferência em "config.js"
 
 Feito isso é só executar o .exe do CPBR normalmente!
