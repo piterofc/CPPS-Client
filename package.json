@@ -1,0 +1,18 @@
+{
+  "name": "cppsclient",
+  "version": "2.0.0",
+  "description": "CPPSClient (base do CP Brasil)",
+  "main": "main.js",
+  "bugs": {
+    "url": "https://github.com/piterofc/CPPS-Client/issues"
+  },
+  "homepage": "https://github.com/piterofc/CPPS-Client#readme",
+  "repository": "https://github.com/piterofc/CPPS-Client",
+  "author": "PiterOfc",
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "discord-rpc": "^3.1.4",
+    "electron-is-dev": "^1.1.0",
+    "electron-updater": "^4.2.0"
+  }
+}

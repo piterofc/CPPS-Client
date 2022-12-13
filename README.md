@@ -14,7 +14,7 @@ Caso queira fazer alguma sugestão para o cliente, abra uma issue e envie sua su
 
 📜 Direitos:
 ----
-© 2022 - Todos os direitos reservados a Piter e Gotastico<br>
+© 2022 - Todos os direitos reservados a Piter (e Gotastico pela página inicial)<br>
 
 <hr>
 

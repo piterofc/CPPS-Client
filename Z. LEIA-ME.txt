@@ -1,22 +1,33 @@
-Tutorial criado por Piter
-• Discord: Piter#6645
-• Twitter: @PiterOfc
+• Tutorial criado por Piter
+- Discord: Piter#6645 (ID: 351111345971789825)
+- YouTube: https://www.youtube.com/@ofcpiter
+- Twitter: @PiterOfc
+- GitHub: https://github.com/PiterOfc
 
-Apoio de Noodles Picante:
-• Website: www.noodlespicante.site
-• Servidor Discord: https://discord.gg/P9dhMJQ
-• Twitter: @NoodlesPicante
+• Apoio de Noodles Picante:
+- Website: www.noodlespicante.site
+- Servidor Discord: https://discord.gg/P9dhMJQ
+- YouTube: https://www.youtube.com/NoodlesPicante
+- Twitter: @NoodlesPicante
+- GitHub: https://github.com/NoodlesPicante
 
-Cliente desenvolvido por Piter e Gotastico
+*********************************************
 
-==========
+Cliente modificado por Piter (base do CPBR)
+Página inicial desenvolvida por Gotastico
+
+=============================================
 
 ANTES DE TUDO, NÃO SE ESQUEÇA DE FAZER O BACKUP DO DESKTOP CLIENT ORIGINAL DO CPBR!
 CASO A MODIFICAÇÃO NÃO FUNCIONE, VOLTE PARA O DESKTOP CLIENT ORIGINAL!!!
 
-Arraste os seguintes arquivos/pastas para o local onde o desktop client do CPBR está instalado no seu computador:
-• main-cpbr.js
-• config.json
-• /pages
+=============================================
+
+- Arraste os seguintes arquivos/pastas para o local onde o desktop client do CPBR está instalado no seu computador:
+
+   • main-cpbr.js  • config.js  • package.json  • /pages
+
+- Renomeie o arquivo "main-cpbr.js" para "main.js" (substituindo o antigo)
+- Modifique os links dos CPPS's de sua preferência em "config.json"
 
 Depois disso é só executar o .exe do CPBR normalmente!

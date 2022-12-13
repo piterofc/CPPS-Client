@@ -1,23 +1,35 @@
-/*style.css feito por Gotastico*/
+/*style.css feito por Gotastico com alterações feitas por Piter */
+
 /*Fundo*/
 body
 {
-  background-image: url(images/CPBackground.png);
+  background-image: url(images/CPBackground+.png);
+  background-repeat: no-repeat;
+/*  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 200%;
+  max-width: 200%;
+  background-size: cover;*/
 }
 
 /*div pai*/
 .container
 {
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 /*div filho*/
 .child
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /*texto*/
 b
 {
@@ -25,7 +37,8 @@ b
   width: 661px;
   height: 77px;
   left: 345px;
-  top: 120px;
+  /*top: 120px;*/
+  top: 60px;
 
   font-family: 'Helvetica';
   font-style: normal;
@@ -35,6 +48,7 @@ b
   text-align: center;
 
   color: #FFFFFF;
+  cursor: default;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -44,26 +58,44 @@ b
 
 strong
 {
-  position: absolute;
-  width: 661px;
-  height: 77px;
-  left: 345px;
-  top: 560px;
+  position: fixed;
+  /*width: 661px;*/
+  width: 400px;
+  /*height: 77px;*/
+  height: 50px;
+  /*left: 345px;*/
+  left: 475px;
+  /*top: 625px;*/
+  top: 630px;
 
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 77px;
+  /*line-height: 77px;*/
+  line-height: 50px;
   text-align: center;
 
-  color: #000000;
+  /*color: #000000;*/
+  color: #ffffff;
+  cursor: default;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+  background-color: rgba(34, 34, 34, 0.5);
+  border-radius: 60px;
+
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 /*botões(input)*/
+/* Medida: anterior + 250 + 22 */
+
 #input1
 {
   position: absolute;
@@ -104,35 +136,49 @@ strong
   cursor: pointer;
 }
 
+#input5
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 142px;
+  top: 492px;
+  cursor: pointer;
+}
+
+#input6
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 414px;
+  top: 492px;
+  cursor: pointer;
+}
+
+#input7
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 686px;
+  top: 492px;
+  cursor: pointer;
+}
+
+#input8
+{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 958px;
+  top: 492px;
+  cursor: pointer;
+}
+
 /*animações dos botões*/
-#input1:hover
-{
-  transform: scale(1.1);
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
 
-#input2:hover
-{
-  transform: scale(1.1);
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-#input3:hover
-{
-  transform: scale(1.1);
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-#input4:hover
+#input1:hover, #input2:hover, #input3:hover, #input4:hover, #input5:hover, #input6:hover, #input7:hover, #input8:hover
 {
   transform: scale(1.1);
   animation-duration: 0.5s;
