@@ -563,18 +563,24 @@ if (config.auto_update == true) {
 // Fim do auto updater
 
 	app.on('window-all-closed', function () {
-    if (updateAvailable) {
-      dialog.showMessageBox({
-        type: "info",
-        buttons: ["Ok"],
-        title: "Atualização do cliente",
-        message: `Instalando a nova versão (v${updateInfo?.version}) do cliente...`
-      });
-      setTimeout(function() {
+    // Quando o cliente for fechado, auto-atualiza e fecha se ativado e se houver atualização disponível
+    if (config.auto_update == true) {
+      if (updateAvailable) {
+        dialog.showMessageBox({
+          type: "info",
+          buttons: ["Ok"],
+          title: "Atualização do cliente",
+          message: `Instalando a nova versão do cliente...`
+        });
+        setTimeout(function() {
+          tray.destroy();
+          autoUpdater.quitAndInstall();
+        }, 2000);
+      } else if (process.platform !== 'darwin') {
         tray.destroy();
-        autoUpdater.quitAndInstall();
-      }, 2000);
-    } else {
+        app.quit();
+      }
+    } else { // E se não tiver ativado, só ignora e fecha o cliente
       if (process.platform !== 'darwin') {
         tray.destroy();
         app.quit();
