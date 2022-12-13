@@ -24,7 +24,7 @@ CASO A MODIFICAÇÃO NÃO FUNCIONE, VOLTE PARA O DESKTOP CLIENT ORIGINAL!!!
 =============================================
 
 - Arraste os seguintes arquivos/pastas para o local onde o desktop client do CPBR está instalado no seu computador:
-(%localappdata%/Programs/cpbrasil/resources/app)
+(%localappdata%\Programs\cpbrasil\resources\app)
 
    • main.js  • config.js  • package.json
 
