@@ -560,8 +560,8 @@ if (config.auto_update == true) {
   });
 
   autoUpdater.on('update-downloaded', (updateInfo) => {
-      updateAvailable = true;
       updateVers = updateInfo.version;
+      updateAvailable = true;
   });
 
 }
