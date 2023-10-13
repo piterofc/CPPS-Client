@@ -23,14 +23,14 @@ Caso queira fazer alguma sugestão para o cliente, abra uma issue e envie sua su
 <!--[Site][Site] | [Discord][Discord] | [YouTube][YouTube] | [Twitter][Twitter] | [GitHub][GitHub]
 ------ | ------ | ------ | ------ | ------ |
 
-   [Site]: <https://www.noodlespicante.site>
+   [Site]: <https://www.noodlespicante.com>
    [Discord]: <https://discord.gg/P9dhMJQ>
    [YouTube]: <https://www.youtube.com/c/NoodlesPicante>
    [Twitter]: <https://twitter.com/NoodlesPicante>
    [GitHub]: <https://github.com/noodlespicante>
 -->
 
-[Website da NP](https://www.noodlespicante.site)<br><br>
+[Website da NP](https://www.noodlespicante.com)<br><br>
 [![Discord da NP](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/P9dhMJQ)
 [![YouTube da NP](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/NoodlesPicante)
 [![Twitter da NP](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/NoodlesPicante)
